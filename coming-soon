@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> ZOZUPAY | Coming Soon</title>
+
+    <meta name="description"
+          content="ZOZUPAY is coming soon. Business funding solutions for UK businesses.">
+
+    <link rel="icon"
+          href="https://raw.githubusercontent.com/zozupay/Assets/main/LOGO_Transparent.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            background: #f7faf8;
+            color: #17352d;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #e8eeeb;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 22px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+            display: block;
+        }
+
+        /* =========================
+           MAIN
+        ========================== */
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 70px 25px;
+        }
+
+        .coming-soon {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 50px;
+            background: #e8f3ee;
+            color: #26735b;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #26735b;
+        }
+
+        h1 {
+            font-size: clamp(44px, 7vw, 78px);
+            line-height: 1.05;
+            letter-spacing: -2.5px;
+            font-weight: 750;
+            color: #17352d;
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            color: #26735b;
+        }
+
+        .intro {
+            max-width: 650px;
+            margin: 0 auto 38px;
+            font-size: 19px;
+            line-height: 1.7;
+            color: #5d6e68;
+        }
+
+        .message-box {
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #e1e9e5;
+            border-radius: 18px;
+            padding: 25px 30px;
+            box-shadow: 0 12px 40px rgba(23, 53, 45, 0.06);
+        }
+
+        .message-box p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #596b65;
+        }
+
+        .contact {
+            margin-top: 30px;
+        }
+
+        .contact a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 24px;
+            border-radius: 9px;
+            background: #26735b;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 650;
+            transition: all 0.2s ease;
+        }
+
+        .contact a:hover {
+            background: #1e5f4b;
+            transform: translateY(-1px);
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #17352d;
+            color: #ffffff;
+            padding: 32px 25px;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 35px;
+        }
+
+        .footer-company {
+            max-width: 600px;
+        }
+
+        .footer-company h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .footer-company p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #c8d6d1;
+        }
+
+        .footer-company a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer-company a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .footer-right p {
+            font-size: 12px;
+            color: #aebfba;
+            line-height: 1.7;
+        }
+
+        .copyright {
+            margin-top: 7px;
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 700px) {
+
+            .header-inner {
+                padding: 18px 20px;
+            }
+
+            .logo img {
+                width: 135px;
+            }
+
+            main {
+                padding: 60px 20px;
+            }
+
+            h1 {
+                letter-spacing: -1.5px;
+            }
+
+            .intro {
+                font-size: 17px;
+                line-height: 1.65;
+            }
+
+            .message-box {
+                padding: 22px 20px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-right {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+        <div class="header-inner">
+
+            <a href="/" class="logo" aria-label="ZOZUPAY">
+                <img
+                    src="https://raw.githubusercontent.com/zozupay/Assets/main/LOGO_Transparent.png"
+                    alt="ZOZUPAY">
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <section class="coming-soon">
+
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Coming Soon
+            </div>
+
+            <h1>
+                Something <span class="highlight">new</span><br>
+                is coming.
+            </h1>
+
+            <p class="intro">
+                ZOZUPAY is currently preparing something new for UK businesses.
+                Our website will be launching soon.
+            </p>
+
+            <div class="message-box">
+
+                <p>
+                    We are working behind the scenes to bring you a simple
+                    and straightforward way to access business funding.
+                    Please check back soon for more information.
+                </p>
+
+                <div class="contact">
+                    <a href="mailto:info@zozupay.co.uk">
+                        Contact ZOZUPAY
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <div class="footer-company">
+
+                <h2>ZOZU PAY LIMITED</h2>
+
+                <p>
+                    Trading as ZOZUPAY<br>
+                    Company Registration No. 17454744<br>
+                    Registered Office: 128 City Road, London, EC1V 2NX, United Kingdom<br>
+                    Email:
+                    <a href="mailto:info@zozupay.co.uk">
+                        info@zozupay.co.uk
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>
+                    © 2026 ZOZUPAY. All rights reserved.
+                </p>
+
+                <p class="copyright">
+                    ZOZU PAY LIMITED
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
